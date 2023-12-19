@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+}
+
+body {
+    width: 100vw;
+}
+
+.navbar {
+    background-color:#C21010!important;
+}
+
+.navbar a, ul li a{
+    color: white;
+}
+
+.nav-form {
+    width: 100%;
+}
+
+
+.suggestions-container {
+    position: absolute;
+    width: 10%;
+    max-height: 150px;
+    transform: translateY(40px);
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+}
+
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+section {
+    margin: 0;
+}
+
+.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.home .container{
+    padding: 50px;
+}
+
+.hometxt {
+    padding-top: 5%;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif!important;
+
+}
+
+
+
+.homebtn .btn:hover{
+    background-color: #C21010;
+}
+
+
+.about {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.about h2{
+    font-family: "Papyrus", Fantasy;
+    padding-top: 50px;
+    color: white!important;
+}
+
+.about .collapse ul li{
+    list-style: none;
+    /* text-align: end; */
+}
+
+.about .collapse ul li i{
+  justify-content: start;
+  padding-right: 10px;
+}
+
+.apps {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.apps .carousel-item img {
+    height: 60vh;
+}
+
+
+.contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.contact form {
+    border: 1px solid white;
+    background-color: green;
+}
+
+.contact .container {
+    padding: 5%;
+}
+
+
+#ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 3vw;
+}
+
+
+
+
+@media all and (max-width: 2400px){
+
+    .home{
+        height: 100vh;
+    }
+
+    #homepic {
+        position: absolute;
+        width: 50%;
+        height: 60%;   
+        justify-content: end;
+        margin-top: 200px;
+        margin-left: 70px;
+    }
+    .hometxth1 {
+        font-family: 'Times New Roman', Times, serif!important;
+        font-size: 400%;
+        font-weight: 700;
+        width: 400px;
+        color: white;
+        line-height: 90px;
+        margin-top: 30px;
+    }
+
+    
+    .homebtn {
+        position:relative;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        top: 130px;
+       }
+
+    .homebtn .btn{
+        height: 70px;
+        width: 300px;
+        font-size: 25px;
+        border-radius: 30px;
+
+    }
+    
+}
+
+@media all and (max-width: 1300px) {
+    #ul {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    .nav-logo{
+        width: 15%;
+        margin: 0;
+    }
+
+    .nav-form {
+        width: 100%;
+        /* padding-right:50px ; */
+    }
+
+
+    /* .nav-form input{
+        width: 130px;
+    } */
+    
+    .home{
+        height: 90vh;
+    }
+
+    #homepic {
+        position: absolute;
+        width: 50%;
+        height: 60%;   
+        justify-content: end;
+        margin-top: 50px;
+        margin-left: 70px;
+    }
+    .hometxth1 {
+        font-family: 'Times New Roman', Times, serif!important;
+        font-size: 300%;
+        font-weight: 700;
+        width: 300px;
+        color: white;
+        line-height: 65px;
+        margin-top: 30px;
+    }
+
+    
+    .homebtn {
+        position:relative;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        top: 30px;
+       }
+
+    .homebtn .btn{
+        height: 40px;
+        width: 150px;
+        font-size: 15px;
+
+    }
+
+    .about .row{
+        justify-content: center;
+    }
+}
+
+
+
+
+@media all and (max-width: 1055px) {
+
+    .nav-logo{
+        width: 70px;
+        margin: 0;
+    }
+
+    .nav-form {
+        width: 100%;
+        /* padding-right:50px ; */
+    }
+
+ 
+
+    .home{
+        height: 90vh;
+    }
+
+
+    #homepic {
+        position: absolute;
+        width: 50%;
+        height: 60%;   
+        justify-content: end;
+        margin-top: 30px;
+        margin-left: 60px;
+    }
+    .hometxth1 {
+        font-family: 'Times New Roman', Times, serif!important;
+        font-size: 300%;
+        font-weight: 700;
+        width: 300px;
+        color: white;
+        line-height: 65px;
+        margin-top: 30px;
+    }
+
+    
+    .homebtn {
+        position:relative;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        top: 50px;
+       }
+
+    .homebtn .btn{
+        height: 40px;
+        width: 150px;
+        font-size: 15px;
+
+    }
+
+
+    .about .row{
+        justify-content: center;
+    }
+}
+
+
+
+@media all and (max-width:900px){
+
+    .nav-logo{
+        width: 15px;
+        margin: 0;
+    }
+
+    .nav-form {
+        width: 100%;
+        /* padding-right:50px ; */
+    }
+
+
+    .nav-form input{
+        width: 250px;
+        margin-left: 90px;
+    }
+    
+    .home{
+        height: 80vh;
+    }
+
+
+    #homepic {
+        position: absolute;
+        width: 50%;
+        height: 50%;   
+        justify-content: end;
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    .hometxth1 {
+        font-family: 'Times New Roman', Times, serif!important;
+        font-size: 200%;
+        color: white;
+        line-height: 50px;
+        margin-top: 50px;
+    }
+
+    
+    .homebtn {
+        position:relative;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        top: 0px;
+       }
+
+    .homebtn .btn{
+        height: 30px;
+        width: 100px;
+        font-size: 10px;
+
+    }
+
+    .about .row{
+        justify-content: center;
+    }
+}
+
+
+
+
+
+@media all and (max-width: 800px) {
+    #ul {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-logo{
+        width: 15px;
+        margin: 0;
+    }
+
+    .nav-form {
+        width: 100%;
+        /* padding-right:50px ; */
+    }
+
+
+    .nav-form input{
+        width: 200px;
+        margin-left: 40px;
+    }
+    
+    .home{
+        height: 80vh;
+    }
+
+
+    #homepic {
+        position: absolute;
+        width: 50%;
+        height: 50%;   
+        justify-content: end;
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    .hometxth1 {
+        font-family: 'Times New Roman', Times, serif!important;
+        font-size: 150%;
+        color: white;
+        line-height: 45px;
+    }
+
+    
+    .homebtn {
+        position:relative;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        top: 40px;
+       }
+
+    .homebtn .btn{
+        height: 30px;
+        width: 100px;
+        font-size: 10px;
+
+    }
+
+    .about .row{
+        justify-content: center;
+    }
+}
+
+
+@media all and (max-width: 515px){
+
+    #ul {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-form input{
+        width: 150px;
+        margin-left: 0;
+    }
+
+
+
+    .home{
+        height: 80vh;
+    }
+
+
+    #homepic {
+        position: absolute;
+        width: 45%;
+        height: 45%;   
+        justify-content: end;
+        margin-top: 80px;
+        margin-left: 70px;
+    }
+    .hometxth1 {
+        font-family: 'Times New Roman', Times, serif!important;
+        font-size: 130%;
+        line-height: 40px;
+        color: white;
+    }
+
+    
+    .homebtn {
+        position:relative;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        top: 60px;
+       }
+
+    .homebtn .btn{
+        height: 30px;
+        width: 100px;
+        font-size: 10px;
+
+    }
+
+    
+   
+}
+
+
+
+
+@media all and (max-width: 430px){
+
+    #ul {
+        display: block;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    .nav-logo{
+        width: 10px;
+        margin: 0;
+    }
+
+    .nav-form {
+        width: 100%;
+        /* padding-right:50px ; */
+    }
+
+
+    .nav-form input{
+        width: 100px;
+    }
+
+    .home{
+        height: 65vh;
+    }
+
+    #homepic {
+        position: absolute;
+        width: 40%;
+        height: 42%;   
+        justify-content: end;
+        margin-top: 80px;
+        margin-left: 70px;
+    }
+
+    /* .hometxt{
+        position: relative;
+    } */
+
+
+    .hometxth1 {
+        font-family: 'Times New Roman', Times, serif!important;
+        font-size: 150%;
+        font-weight: 800;
+        width: 150px;
+        color: white;
+        line-height: 40px;
+    }
+
+    
+    .homebtn {
+        position:relative;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        top: 80px;
+       }
+
+    .homebtn .btn{
+        height: 30px;
+        width: 100px;
+        font-size: 10px;
+
+    }
+
+    .about .row{
+        justify-content: center;
+    }
+}
+
+
+
+
+/* Add snowfall animation */
+
+/* 
+body::before {  
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url('./images/snowflake.jpg'), url('./images/snowflake.jpg') ; 
+    z-index: 1;
+    animation: snowfall 10s linear infinite;
+}
+
+@keyframes snowfall {
+    to {
+        transform: translateY(100vh);
+    }
+} */
